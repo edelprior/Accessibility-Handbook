@@ -1,0 +1,141 @@
+// Using the Material Docuemntation on
+// https://github.com/material-components/material-components-web-react
+// The Sass modules were imported within the terminal
+
+
+@import '@material/react-drawer/index.scss';
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-material-icon/index.scss';
+@import '@material/react-list/index.scss';
+@import '@material/react-layout-grid/index.scss';
+@import '@material/react-typography/index.scss';
+@import '@material/react-button/index.scss';
+@import '@material/react-card/index.scss';
+@import '@material/react-text-field/index.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// Declaring universal variables in another Sass files to adhere
+// to good practice, found on https://sass-lang.com/documentation/file.SASS_REFERENCE.html
+// Keeps code clean and legible
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+@import "./colours";
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// Importing Sass Mixins to customize the MDC components further
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+@import "@material/top-app-bar/mixins";
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+}
+.drawer {
+  @include mdc-drawer-width(28%);
+  @include mdc-drawer-item-icon-ink-color($white);
+  @include mdc-drawer-surface-fill-color($orange);
+
+}
+.link {
+    text-decoration: none;
+  }
+.icon {
+  transform: scale(1.45);
+
+}
+
+.title {
+  @include mdc-typography(headline3);
+  margin-left: 8%;
+}
+
+.menuicon {
+  margin-left: -10px;
+  transform: scale(1.2);
+}
+.logo {
+  margin-top: 25%;
+  margin-left: 40%;
+  margin-bottom: 10%;
+  transform: scale(6);
+}
+.TopAppBar{
+    @include mdc-top-app-bar-fill-color($transparent);
+    @include mdc-top-app-bar-icon-ink-color($blue);
+
+  }
+
+.CardModal {
+  position: absolute;
+  width: 45%;
+
+}
+.button-alternate {
+  @include mdc-button-container-fill-color($blue);
+  width:80%;
+  margin-left: 40px;
+}
+
+.signupbutton {
+  @include mdc-button-outline-color($blue);
+  @include mdc-button-ink-color($blue);
+width:80%;
+  margin-left: 40px;
+
+
+}
+.Searchicon {
+  transform: scale(1.25);
+  color: $blue;
+}
+.codeicon {
+   transform: scale(1.55);
+}
+.closeIcon {
+    transform: scale(1.25);
+    margin: 2%;
+}
+.Search {
+  height: 100%;
+  @include mdc-typography(headline5);
+  @include mdc-text-field-textarea-stroke-color($blue);
+  @include mdc-text-field-outline-color($blue);
+  @include mdc-text-field-ink-color(black);
+  @include mdc-text-field-label-color($blue);
+  @include mdc-text-field-caret-color($blue);
+}
+.NavText {
+  height: 100%;
+    @include mdc-list-item-primary-text-ink-color(black);
+    @include mdc-typography(headline5);
+}
+
+.typeContentCard {
+  @include mdc-card-fill-color($blue);
+  margin-left: 5%;
+  margin-right:  5%;
+}
+
+
+.welcomeText {
+position: center;
+}
+.Alpha {
+  height: 55%;
+}
+
+.sandboxCard {
+  height: 500px;
+}
+.Referencelist{
+  height: 80px;
+}
+
+.iconOpen {
+  color: $orange;
+  margin-left: 30px;
+  }
+
+.display-none {
+    display: none;
+  }
