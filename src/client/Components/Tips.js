@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Styles/App.scss';
+import '../App.scss';
 // - - - - - - - - - - - - - - - - - - - - - //
 import List, {ListItem, ListItemGraphic} from '@material/react-list';
 import {Headline6} from '@material/react-typography';
@@ -27,22 +27,22 @@ class Tips extends Component {
   render() {
     return(
       <Grid>
-      <Row>
-      <Cell className = "Referencelist" columns = {12}>
-      <List>
-      <ListItem  className= "Referencelist" onClick = {()=> this.props.show(this.props.tip)}> <Headline6>
-      {this.props.title}</Headline6>
-      <ListItemGraphic className = "iconOpen" graphic={<MaterialIcon icon="open_in_new"/>} />
+        <Row>
+          <Cell className = "Referencelist" columns = {12}>
+            <List>
+              <ListItem  className= "Referencelist" onClick = {()=> this.props.show(this.props.tip)}> <Headline6>
+                {this.props.title}</Headline6>
+              <ListItemGraphic className = "iconOpen" graphic={<MaterialIcon icon="open_in_new"/>} />
 
-      </ListItem>
-      </List>
-      </Cell>
-      </Row>
+              </ListItem>
+            </List>
+          </Cell>
+        </Row>
       </Grid>
-    )}
-  }
+    );}
+}
 
 
 
 
-export default Tips
+export default Tips;

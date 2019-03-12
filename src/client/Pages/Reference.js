@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../Styles/App.scss';
+import '../App.scss';
 import Data from '../Components/Data';
-import TipCard from '../Components/TipCard'
+import TipCard from '../Components/TipCard';
 // - - - - - - - - - - - - - - - - - - - - - //
 
 
@@ -35,47 +35,48 @@ class Reference extends Component {
   constructor() {
     super();
     this.state = { show: false,
-                   modalData: []
-                 }
-               }
+      modalData: []
+    };
+}
     show = (data) => {
-    this.setState({ show: true,
-                    modalData: data});
-    }
+      this.setState({ show: true,
+        modalData: data});
+    };
     hide = () => {
-    this.setState({ show: false });
-    }
+      this.setState({ show: false });
+    };
+
 
   render() {
     return(
       <Grid>
         <Row>
           <Cell className = "title">
-          <Headline3> Reference </Headline3>
+            <Headline3> Reference </Headline3>
 
-  </Cell>
-  </Row>
-
-
-<Row>
-<Cell columns = {6}>
-<Data  show = {this.show} modalData = {this.modalData} tips = {this.props.tips}/>
-
-              </Cell>
-              <Row>
+          </Cell>
+        </Row>
 
 
-        <CardModal className = "modalTest" show={this.state.show} modalData = {this.state.modalData} handleClose={this.hide} >
-        </CardModal>
+        <Row>
+          <Cell columns = {6}>
+            <Data  show = {this.show} modalData = {this.modalData} tips = {this.props.tips}/>
+
+          </Cell>
+          <Row>
 
 
-    </Row>
-    </Row>
+            <CardModal className = "modalTest" show={this.state.show} modalData = {this.state.modalData} handleClose={this.hide} >
+            </CardModal>
+
+
+          </Row>
+        </Row>
 
       </Grid>
 
-  );
-}
+    );
+  }
 }
 // eslint-disable-next-line
 {/*
@@ -88,12 +89,12 @@ const CardModal = (props) => {
 
   return (
     <Grid>
-    <Row className = {showHideClassName}>
-    <Cell className = "CardModal" columns = {12}>
-            <MaterialIcon className = "closeIcon" icon="close" onClick={props.handleClose}/>
-            <TipCard modalData = {props.modalData} />
-      </Cell>
-    </Row>
+      <Row className = {showHideClassName}>
+        <Cell className = "CardModal" columns = {12}>
+          <MaterialIcon className = "closeIcon" icon="close" onClick={props.handleClose}/>
+          <TipCard modalData = {props.modalData} />
+        </Cell>
+      </Row>
     </Grid>
   );
 };

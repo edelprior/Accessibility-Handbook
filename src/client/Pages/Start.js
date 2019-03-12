@@ -4,7 +4,7 @@ import { Headline2 } from '@material/react-typography';
 import Button from '@material/react-button';
 import MaterialIcon from '@material/react-material-icon';
 // - - - - - - - - - - - - - - - - - - - - - //
-import '../Styles/App.scss';
+import '../App.scss';
 // - - - - - - - - - - - - - - - - - - - - - //
 //import { Headline4 } from '@material/react-typography';
 // eslint-disable-next-line
@@ -13,13 +13,14 @@ import '../Styles/App.scss';
     Whats Going in this Component?
 
     Funcitonality?
-
+ 
     Overview:
 */}
 
 
 class Start extends Component {
-  state = { show: false }
+
+   state = { show: false };
 
    showModal = () => {
      this.setState({ show: true });
