@@ -58,7 +58,7 @@ Whereas Universal Design incorporates the notion of design without need for adap
          </Row>
          <Row>
            <Cell className = "commentSection" columns = {12}>
-             <Headline4> Comments </Headline4>
+             <Headline4 className = "commentTitle"> Comments </Headline4>
              <UserList/>
            </Cell>
          </Row>
@@ -68,27 +68,10 @@ Whereas Universal Design incorporates the notion of design without need for adap
              <CreateUser/>
            </Cell>
          </Row>
+         <EditUser/>
        </Grid>
      );
    }
 }
-
-
-const SignUpModal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? 'modal display-block' : 'modal display-none';
-
-  return (
-    <Grid>
-      <Row className = {showHideClassName}>
-        <Cell className = "CardModal" columns = {12}>
-          <MaterialIcon className = "closeIcon" icon="close" onClick={handleClose}/>
-
-
-
-        </Cell>
-      </Row>
-    </Grid>
-  );
-};
 
 export default Start;

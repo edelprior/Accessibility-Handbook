@@ -56,7 +56,7 @@ server.get('/api/users', (req, res) => {
 
 // retrieve user with specific ID from DB
 server.get('/api/users/:id', (req, res) => {
-  db.collection('users').findOne({_id: new ObjectID(req.params.id) }, (err, result) => {
+  db.collection('users').findOne({_id: new ObjectID(req.match.params.id) }, (err, result) => {
     if (err) throw err;
 
     console.log(result);
@@ -66,7 +66,7 @@ server.get('/api/users/:id', (req, res) => {
 
 // delete user with specific ID from DB
 server.delete('/api/users', (req, res) => {
-  db.collection('users').deleteOne( {_id: new ObjectID(req.body.id) }, err => {
+  db.collection('users').deleteOne( {_id: new ObjectID(req.id) }, err => {
     if (err) return res.send(err);
 
     console.log('deleted from database');

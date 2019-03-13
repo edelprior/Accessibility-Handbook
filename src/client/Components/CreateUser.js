@@ -4,6 +4,9 @@ import axios from 'axios';
 import TextField, {HelperText, Input} from '@material/react-text-field';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 import Button from '@material/react-button';
+import EditUser from './EditUser';
+
+
 class CreateUser extends Component {
   constructor(props) {
     super(props);
@@ -39,32 +42,30 @@ class CreateUser extends Component {
     // note: name of the inputs must match the property names in state
     return (
       <Grid>
-        <Row>
-          <Cell columns = {12}>
-            <form onSubmit={this.handleSubmit}>
-              <TextField fullwidth label = 'What is your name?'>
-                <Input type="text"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.handleChange} />
-              </TextField>
-              <TextField label = "Give us a look at your face!">
-                <Input type="text"
-                  name="picture"
-                  value={this.state.picture}
-                  onChange={this.handleChange} />
-              </TextField>
-              <TextField label = "Tell us what you think!">
-                <Input type="text"
-                  name="comment"
-                  value={this.state.comment}
-                  onChange={this.handleChange} />
-              </TextField>
+        <form onSubmit={this.handleSubmit} className ="Form">
 
-              <Button type="submit" value="Submit">Upload Comment</Button>
-            </form>
-          </Cell>
-        </Row>
+          <TextField textarea  className ="Form" label = 'What is your name?'>
+            <Input type="text"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange} />
+          </TextField>
+          <br/>
+          <TextField className ="Form" textarea label = "Give us a look at your face!">
+            <Input type="text"
+              name="picture"
+              value={this.state.picture}
+              onChange={this.handleChange} />
+          </TextField>
+          <br/>
+          <TextField textarea className ="Form" label = "Tell us what you think!">
+            <Input type="text"
+              name="comment"
+              value={this.state.comment}
+              onChange={this.handleChange} />
+          </TextField>
+          <Button type="submit" value="Submit">Upload Comment</Button>
+        </form>
       </Grid>
     );
   }

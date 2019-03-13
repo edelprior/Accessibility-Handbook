@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
+import {  Headline5 } from '@material/react-typography';
+
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 import Button from '@material/react-button';
 import TextField, {HelperText, Input} from '@material/react-text-field';
@@ -59,8 +60,9 @@ class EditUser extends Component {
       <Grid>
         <Row>
           <Cell columns = {12}>
+          <Headline5> Edit a Comment </Headline5>
             <form onSubmit={this.handleSubmit}>
-              <TextField label = "Tell us what you think!">
+              <TextField textarea className = "Form" label = "What would you like to change?">
                 <Input type="text"
                   name="comment"
                   value={this.state.comment}
@@ -74,6 +76,7 @@ class EditUser extends Component {
             </form>
           </Cell>
         </Row>
+
       </Grid>
     );
   }

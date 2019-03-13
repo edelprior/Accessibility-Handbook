@@ -125,7 +125,22 @@
 }
 
 .sandboxCard {
-  height: 500px;
+  height: 600px;
+}
+
+.explaination {
+  background-color: $comments;
+
+}
+
+.commentTitle {
+  margin-left: 5%;
+}
+.Form {
+  @include mdc-text-field-textarea-stroke-color($orange);
+}
+.explainationText {
+  margin: 20px;
 }
 .Referencelist{
   height: 80px;
