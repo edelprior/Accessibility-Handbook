@@ -20,7 +20,6 @@ import MaterialIcon from '@material/react-material-icon';
     - - - - -
     Whats Going in this Component?
     - - - - -
-
     - - - - -
     Funcitonality?
     - - - - -
@@ -37,7 +36,8 @@ class Reference extends Component {
     this.state = { show: false,
       modalData: []
     };
-}
+  }
+
     show = (data) => {
       this.setState({ show: true,
         modalData: data});
@@ -47,36 +47,36 @@ class Reference extends Component {
     };
 
 
-  render() {
-    return(
-      <Grid>
-        <Row>
-          <Cell className = "title">
-            <Headline3> Reference </Headline3>
-
-          </Cell>
-        </Row>
-
-
-        <Row>
-          <Cell columns = {6}>
-            <Data  show = {this.show} modalData = {this.modalData} tips = {this.props.tips}/>
-
-          </Cell>
+    render() {
+      return(
+        <Grid>
           <Row>
+            <Cell className = "title">
+              <Headline3> Reference </Headline3>
 
-
-            <CardModal className = "modalTest" show={this.state.show} modalData = {this.state.modalData} handleClose={this.hide} >
-            </CardModal>
-
-
+            </Cell>
           </Row>
-        </Row>
 
-      </Grid>
 
-    );
-  }
+          <Row>
+            <Cell columns = {6}>
+              <Data  show = {this.show} modalData = {this.modalData} tips = {this.props.tips}/>
+
+            </Cell>
+            <Row>
+
+
+              <CardModal className = "modalTest" show={this.state.show} modalData = {this.state.modalData} handleClose={this.hide} >
+              </CardModal>
+
+
+            </Row>
+          </Row>
+
+        </Grid>
+
+      );
+    }
 }
 // eslint-disable-next-line
 {/*

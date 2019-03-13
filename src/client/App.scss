@@ -36,6 +36,10 @@
   @include mdc-drawer-surface-fill-color($orange);
 
 }
+
+.commentSection {
+  background-color: $comments;
+}
 .link {
     text-decoration: none;
   }
@@ -43,10 +47,14 @@
   transform: scale(1.45);
 
 }
+.ProfileName {
+  margin-left: 2%;
+}
 
 .title {
   @include mdc-typography(headline3);
   margin-left: 8%;
+  margin-right: 8%;
 }
 
 .menuicon {
@@ -79,7 +87,7 @@
 .signupbutton {
   @include mdc-button-outline-color($blue);
   @include mdc-button-ink-color($blue);
-width:80%;
+  width:80%;
   margin-left: 40px;
 
 
@@ -116,25 +124,23 @@ width:80%;
   margin-right:  5%;
 }
 
-
-.welcomeText {
-position: center;
-}
-.Alpha {
-  height: 55%;
-}
-
 .sandboxCard {
   height: 500px;
 }
 .Referencelist{
   height: 80px;
 }
-
+.ColorT {
+  color: #CC8400;
+}
 .iconOpen {
   color: $orange;
   margin-left: 30px;
   }
+
+.deleteIcon {
+  margin-left: 3%;
+}
 
 .display-none {
     display: none;
