@@ -1,20 +1,23 @@
+{/*
+  Functionality of Examples.js :
+
+Renders an iFrame component that embeds the sandbox example,
+along with explainations of each.
+
+  */}
+
+
+// - - - React & iFrame  & Styles - - - - - - - - - //
+
 import React, { Component } from 'react';
 import Iframe from 'react-iframe';
-import {Cell, Grid, Row} from '@material/react-layout-grid';
-import { Headline3, Headline5, Body1, Body2} from '@material/react-typography';
-// - - - - - - - - - - - - - - - - - - - - - //
-
 import '../App.scss';
 
-// eslint-disable-next-line
-{/* Link to Stylesheet, React Library, i-Frame package and Grid..
+// - - - Material Imports - - - - - - - - - //
+import {Cell, Grid, Row} from '@material/react-layout-grid';
+import { Headline3, Headline5, Body1, Body2} from '@material/react-typography';
 
-    Whats Going in this Component?
-
-    Funcitonality?
-
-    Overview:
-*/}
+// - - - - - - - - - - - - - - - - - - - - - //
 
 class Examples extends Component {
 
@@ -45,9 +48,6 @@ class Examples extends Component {
         {/* - - - - - - - - - - - - - - - - - - - - - - - */}
         <Row>
           <Cell columns = {6} className = "sandboxCard">
-
-
-
 
             <Iframe
               title = "Color"

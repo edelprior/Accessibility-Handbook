@@ -1,8 +1,19 @@
+{/*
+  Functionality of TipCard.js :
+
+  Using this.props.modalData from the array and state that's been defined
+  in Reference, we can access the title and each object in the array that's
+  been passed in through props with the <Data> element.
+
+  */}
+
+
+// - - - React & Styles  - - - - - - - - //
+
 import React, { Component } from 'react';
-import '../Pages/Examples';
 import '../App.scss';
 
-// - - - - - - - - - - - - - - - - - - - - - //
+// - - - - Material Imports - - - - - - - //
 
 import Card, {
   CardPrimaryContent,
@@ -13,21 +24,11 @@ import { Headline3, Headline5, Body1, Body2} from '@material/react-typography';
 import {Cell} from '@material/react-layout-grid';
 import MaterialIcon from '@material/react-material-icon';
 
+// - - - - Components  - - - - - - //
+import '../Pages/Examples';
+
 // - - - - - - - - - - - - - - - - - - - - - //
 
-// eslint-disable-next-line
-{/* Link to Stylesheet, React Library, and Layout Grid..
-    - - - - -
-    Whats Going in this Component?
-    - - - - -
-    Using this.props.modalData from the array and state that's been defined
-    in Reference, we can access the title and each object in the array that's
-    been passed in through props with the <Data> element.
-    - - - - -
-    Funcitonality?
-    - - - - -
-
-*/}
 class TipCard extends Component {
   render() {
     return (

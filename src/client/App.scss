@@ -24,45 +24,12 @@
 @import "@material/top-app-bar/mixins";
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-.drawer-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: scroll;
-}
-.drawer {
-  @include mdc-drawer-width(28%);
-  @include mdc-drawer-item-icon-ink-color($white);
-  @include mdc-drawer-surface-fill-color($orange);
 
-}
 
-.commentSection {
-  margin-top: 20%;
-}
-.link {
-    text-decoration: none;
-  }
+// - - - - - - - - Icon Styling  - - - - - - - - - - //
 .icon {
   transform: scale(1.45);
-
 }
-.type {
-  margin: 140px;
-}
-.color {
-  color: $orange;
-}
-.ProfileName {
-  margin-left: 2%;
-}
-
-.title {
-  @include mdc-typography(headline3);
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
 .menuicon {
   margin-left: -10px;
   transform: scale(1.2);
@@ -72,31 +39,6 @@
   margin-left: 40%;
   margin-bottom: 10%;
   transform: scale(6);
-}
-.TopAppBar{
-    @include mdc-top-app-bar-fill-color($transparent);
-    @include mdc-top-app-bar-icon-ink-color($blue);
-
-  }
-
-.CardModal {
-  position: absolute;
-  width: 45%;
-
-}
-.button-alternate {
-  @include mdc-button-container-fill-color($blue);
-  width:80%;
-  margin-left: 40px;
-}
-
-.signupbutton {
-  @include mdc-button-outline-color($blue);
-  @include mdc-button-ink-color($blue);
-  width:80%;
-  margin-left: 40px;
-
-
 }
 .Searchicon {
   transform: scale(1.25);
@@ -109,6 +51,121 @@
     transform: scale(1.25);
     margin: 2%;
 }
+.iconOpen {
+  color: $orange;
+  margin-left: 30px;
+  }
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+// - - - - - - - - - Drawer Styling - - - - - - - - - - - - //
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+}
+.drawer {
+  @include mdc-drawer-width(28%);
+  @include mdc-drawer-item-icon-ink-color($white);
+  @include mdc-drawer-surface-fill-color($orange);
+}
+.NavText {
+  height: 100%;
+    @include mdc-list-item-primary-text-ink-color(black);
+    @include mdc-typography(headline5);
+}
+.link {
+    text-decoration: none;
+  }
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+  // - - - - - - - - - Card Styling - - - - - - - - - - - - //
+
+  .typeContentCard {
+    @include mdc-card-fill-color($blue);
+    margin-left: 5%;
+    margin-right:  5%;
+  }
+  .sandboxCard {
+    height: 600px;
+  }
+  .CardModal {
+    position: absolute;
+    width: 45%;
+  }
+  .display-none {
+      display: none;
+  }
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+  // - - - - - - - - - Text Styling - - - - - - - - - - - - //
+
+.commentSection {
+  margin-top: 15%;
+}
+
+.type {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.color {
+  color: $orange;
+}
+.ProfileName {
+  margin-left: 2%;
+}
+.title {
+  @include mdc-typography(headline3);
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.welcomeQuote {
+  color: #CC8400;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.welcomeText {
+  margin-left: 10%;
+}
+.explainationText {
+  margin: 20px;
+}
+.commentTitle {
+  margin-left: 5%;
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// - - - - - - - - - Top App Bar Styling - - - - - - - - - - - - //
+
+.TopAppBar{
+    @include mdc-top-app-bar-fill-color($transparent);
+    @include mdc-top-app-bar-icon-ink-color($blue);
+}
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+  // - - - - - - - - - Button Styling - - - - - - - - - - - - //
+
+.button-alternate {
+  @include mdc-button-container-fill-color($blue);
+  width:80%;
+  margin-left: 40px;
+}
+.signupbutton {
+  @include mdc-button-outline-color($blue);
+  @include mdc-button-ink-color($blue);
+  width:80%;
+  margin-left: 40px;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+// - - - - - Search & Form & List Styling - - - - - - - - //
+
 .Search {
   height: 100%;
   @include mdc-typography(headline5);
@@ -118,56 +175,9 @@
   @include mdc-text-field-label-color($blue);
   @include mdc-text-field-caret-color($blue);
 }
-.NavText {
-  height: 100%;
-    @include mdc-list-item-primary-text-ink-color(black);
-    @include mdc-typography(headline5);
-}
-
-.typeContentCard {
-  @include mdc-card-fill-color($blue);
-  margin-left: 5%;
-  margin-right:  5%;
-}
-
-.sandboxCard {
-  height: 600px;
-}
-
-.explaination {
-  background-color: $comments;
-
-}
-
-.commentTitle {
-  margin-left: 5%;
-}
 .Form {
   @include mdc-text-field-textarea-stroke-color($orange);
-}
-.explainationText {
-  margin: 20px;
 }
 .Referencelist{
   height: 80px;
 }
-.ColorT {
-  color: #CC8400;
-  margin-left: 10%;
-}
-.iconOpen {
-  color: $orange;
-  margin-left: 30px;
-  }
-
-.welcomeText {
-  margin-left: 10%;
-}
-
-.deleteIcon {
-  margin-left: 3%;
-}
-
-.display-none {
-    display: none;
-  }

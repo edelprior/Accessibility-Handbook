@@ -1,26 +1,27 @@
+{/*
+
+    Functionality of Tip.js :
+
+    Using this.props.tips this component holds the map function, taking
+    props from Data.js through props, and putting it into (tip) to display
+    the 'Reference' list
+
+*/}
+
+// - - -React, Router and Styles  - - - - - - - - //
 import React, { Component } from 'react';
 import '../App.scss';
-// - - - - - - - - - - - - - - - - - - - - - //
+
+// - - - - Material Imports - - - - - - - - - - //
+
 import List, {ListItem, ListItemGraphic} from '@material/react-list';
 import {Headline6} from '@material/react-typography';
 import MaterialIcon from '@material/react-material-icon';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
+
 // - - - - - - - - - - - - - - - - - - - - - //
 
 
-// eslint-disable-next-line
-{/* Link to Stylesheet, React Library, and Layout Grid..
-    - - - - -
-    Whats Going in this Component?
-    - - - - -
-    Using this.props.tips this component holds the map function, taking
-    props from Data.js through props, and putting it into (tip) to display
-    the 'Reference' list
-    - - - - -
-    Funcitonality?
-    - - - - -
-
-*/}
 
 class Tips extends Component {
 

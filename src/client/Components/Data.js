@@ -1,9 +1,26 @@
+{/*
+
+    Functionality of Data.js :
+
+    Get required data from Database with Axios
+
+*/}
+
+// - - - React, Router and Styles  - - - - - - - - //
+
+
 import React, { Component } from 'react';
 import axios from 'axios';
+
+// - - - Material Imports - - -  - - - - - - - - //
 import { Cell, Grid, Row } from '@material/react-layout-grid';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
+
+// - - - - - - - - Components  - - - - - - - - //
 import Tips from './Tips';
+
+// - - - - - - - - - - - - - - - - - - - - //
 
 
 class App extends Component {

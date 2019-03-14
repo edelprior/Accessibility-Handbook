@@ -1,36 +1,40 @@
+{/*
+  Functionality of App.js :
+
+  Main Page (Top page that is full of static
+  Components, Drawer, Top App Bar and Router)
+  These components will stay on every page, with only
+  <DrawerAppContent> being altered.
+  - - - - -
+  What is the Functionality?
+  - - - - -
+  Serves as the Beginning page of the application, is the
+  first thing the users sees, needs to have decent nav points
+  explain what the app is and catch the users attention.
+  */}
+
+
+// - - - React, Router and Styles  - - - - - - - - //
+
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.scss';
-// Linking React Library, React-Dom, and Stylesheet
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
-// Import material.io modules for styling the application
+
+// - - - - -Material Imports - - - - - - - - - - - - - //
+
 import TopAppBar, { TopAppBarFixedAdjust } from '@material/react-top-app-bar';
 import Drawer, { DrawerAppContent, DrawerContent, DrawerHeader } from '@material/react-drawer';
 import MaterialIcon from '@material/react-material-icon';
 import List, { ListItem, ListItemGraphic, ListItemText } from '@material/react-list';
 import { Headline3 } from '@material/react-typography';
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
-// Importing Components that act as 'pages' within the Router-dom
+
+// - - - - - - Components - - - - - - - - - - - - - - //
+
 import Start from './Pages/Start';
 import Reference from './Pages/Reference';
 import Examples from './Pages/Examples';
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-// eslint-disable-next-line
-{/* - - - - -
-    What's going in this Component?
-    - - - - -
-    Main Page (Top page that is full of static
-    Components, Drawer, Top App Bar and Router)
-    These components will stay on every page, with only
-    <DrawerAppContent> being altered.
-    - - - - -
-    What is the Functionality?
-    - - - - -
-    Serves as the Beginning page of the application, is the
-    first thing the users sees, needs to have decent nav points
-    explain what the app is and catch the users attention.
-*/ }
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 class App extends Component {
   constructor(props) {

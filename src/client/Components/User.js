@@ -1,23 +1,40 @@
-import {Cell, Grid, Row} from '@material/react-layout-grid';
+{/*
+  Functionality of User.js :
+
+  - Represents a single 'user' and its props
+  - Holds a router that renders the edit user through the <Link>
+  - Delete function accessed through props via the parent component
+  - Has Avatar CSS styles from material - ui
+  */}
+
+
+// - - - React, Router and Styles  - - - - - - - - //
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+
+// - - - - - Material Imports - - - - - - - - - - //
+
+import { Cell, Grid, Row } from '@material/react-layout-grid';
+import TextField, { HelperText, Input } from '@material/react-text-field';
+import List, { ListItem } from '@material/react-list';
+import { Headline5, Body1 } from '@material/react-typography';
 import Button from '@material/react-button';
 import Avatar from '@material-ui/core/Avatar';
-import TextField, {HelperText, Input} from '@material/react-text-field';import React from 'react';
-import ReactDOM from 'react-dom';
-import List, {ListItem, ListItemGraphic} from '@material/react-list';
-import { Body1, Headline5 } from '@material/react-typography';
-import { Link } from 'react-router-dom';
 import MaterialIcon from '@material/react-material-icon';
-// Component to represent a single User 'Card'
-// note that the edit button navigates to a new URL (which will load a new Component via React Router)
-// whereas the delete button invokes a function in the parent Component
-class User extends React.Component {
 
-  // define what happens when this componet gets drawn on the UI
+// (No imported Components as it is a standalone for export)
+// - - - - - - - - - - - - - - - - - - - - - //
+
+class User extends Component {
+
   render() {
     return (
       <Grid>
         <Row>
           <Cell columns = {12}>
+
+            {/* - - - - - - - - - - - - -*/}
             <List>
               <ListItem>
                 <Avatar alt="Profile" src={this.props.image} />
@@ -27,15 +44,25 @@ class User extends React.Component {
                 <Body1>   {this.props.comment} </Body1>
               </ListItem>
             </List>
+            {/* - - - - - - - - - - - - -*/}
           </Cell>
-          <Button type="button" onClick={() => {this.props.handleDelete(this.props.id);}}>
-                      Delete
+
+          {/* - - - - - - - - - - - - -*/}
+
+          <Button type="button"
+            onClick={() => {this.props.handleDelete(this.props.id);}}>
+            Delete
           </Button>
+
+          {/* - - - - - - - - - - - - -*/}
+
           <Link to={`/edit-user/${this.props.id}`}>
             <Button type="button">
-                      Edit
+             Edit
             </Button>
           </Link>
+
+          {/* - - - - - - - - - - - - -*/}
         </Row>
       </Grid>
     );
