@@ -3,17 +3,19 @@ Final Year Project ~ Creative Computing @ IADT
 
 ## [View the Application](https://accessibility-handbook.herokuapp.com/#/)
 
-
-------
-
-## To Run on Local Machine 
+### To Run on Local Machine 
 You will need to follow these steps:
+
 1. Download the zip or `git clone` to your machine.
-2. Open the command prompt and `npm install` all the dependicies which are listed in the package.json
-3. Running a local Database on the network will require local setup and some changes in the server.js file, a tutorial for that can be found        
-   at https://docs.mongodb.com/manual/installation/
+
+2. Open the command prompt and `npm install` all the dependicies which are listed in the package.json.
+
+3. Running a local Database on the network will require local setup and some changes in the server.js file, 
+   a tutorial for that can be found at https://docs.mongodb.com/manual/installation/.
+   
 4. This application uses Mongo Atlas, and can be accessed anywhere (by the admin). This means the app functions perfectly with CRUD  
    techniques going to the online DB and returning correct values.
+   
 5. Learn all about accessibility design principles, and view the code sandboxes as a demonstration for better understanding!
 
 ------
