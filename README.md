@@ -1,7 +1,7 @@
 # Accessibility-Handbook
 Final Year Project ~ Creative Computing @ IADT
 
-## [View the Application Live](https://accessibility-handbook.herokuapp.com/#/)
+## [View the Application](https://accessibility-handbook.herokuapp.com/#/)
 
 
 ------
