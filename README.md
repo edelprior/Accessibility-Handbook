@@ -5,7 +5,7 @@ Final Year Project ~ Creative Computing @ IADT
 
 https://accessibility-handbook.herokuapp.com/#/
 
-### The Study, Testing and Evaluation of Accessibility Design principles and tools practiced by the Top  Leading technology companies worldwide*, with the intent of creating an interactive browser based reference library.
+### The Study, Testing and Evaluation of Accessibility Design principles and tools practiced by the Top  Leading technology companies worldwide, with the intent of creating an interactive browser based reference library.
 
 Are the Top 10 leading Technology Companies building products  with the intention of an equal experience for the widest audience possible? If so, how do they achieve this?
 
