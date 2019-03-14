@@ -51,12 +51,12 @@ class Start extends Component {
                </Body1>
              </Cell>
              <Cell className = "type" columns ={12} >
-               <Headline3>
+               <Headline4>
 Frequently confused with Universal Design, <b className = "color">Accessible Design</b> is the idea of a Design for all
-</Headline3>
-<Headline3>
+</Headline4>
+<Headline5>
 Accommodating those who are limited in performance, with the needs of the <b className = "color"> users </b> specifically taken into account.
-               </Headline3>
+               </Headline5>
 
              </Cell>
            </Row>
