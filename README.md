@@ -9,7 +9,7 @@ https://accessibility-handbook.herokuapp.com/#/
 
 Are the Top 10 leading Technology Companies building products  with the intention of an equal experience for the widest audience possible? If so, how do they achieve this?
 
-####I would like to research this area, to compare and test with users, the different principles outlined by these companies.
+#### I would like to research this area, to compare and test with users, the different principles outlined by these companies.
 
 My goal is to create a reference library that presents the best principles. I would like to display these principles using interactive examples and animations.
 
