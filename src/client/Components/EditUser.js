@@ -19,7 +19,7 @@ class EditUser extends Component {
   componentDidMount() {
     // when this Component mounts, fetch data relating to the user to be edited
     // the user's ID is passed in via the URL and accessed via props
-    axios.get('/api/users/' + this.id)
+    axios.get('/api/users/' + this.props.match.params.id)
       .then(response => {
         this.setState({
           _id: response.data._id,
@@ -60,7 +60,7 @@ class EditUser extends Component {
       <Grid>
         <Row>
           <Cell columns = {12}>
-          <Headline5> Edit a Comment </Headline5>
+            <Headline5> Edit a Comment </Headline5>
             <form onSubmit={this.handleSubmit}>
               <TextField textarea className = "Form" label = "What would you like to change?">
                 <Input type="text"

@@ -5,7 +5,7 @@ import TextField, {HelperText, Input} from '@material/react-text-field';import R
 import ReactDOM from 'react-dom';
 import List, {ListItem, ListItemGraphic} from '@material/react-list';
 import { Body1, Headline5 } from '@material/react-typography';
-
+import { Link } from 'react-router-dom';
 import MaterialIcon from '@material/react-material-icon';
 // Component to represent a single User 'Card'
 // note that the edit button navigates to a new URL (which will load a new Component via React Router)
@@ -25,11 +25,17 @@ class User extends React.Component {
               </ListItem>
               <ListItem>
                 <Body1>   {this.props.comment} </Body1>
-                <MaterialIcon onClick={() => {this.props.handleDelete(this.props.comment);}} className = "deleteIcon" icon = "delete" />
               </ListItem>
             </List>
           </Cell>
-
+          <Button type="button" onClick={() => {this.props.handleDelete(this.props.id);}}>
+                      Delete
+          </Button>
+          <Link to={`/edit-user/${this.props.id}`}>
+            <Button type="button">
+                      Edit
+            </Button>
+          </Link>
         </Row>
       </Grid>
     );

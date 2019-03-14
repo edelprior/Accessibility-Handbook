@@ -2,7 +2,7 @@
 // https://github.com/material-components/material-components-web-react
 // The Sass modules were imported within the terminal
 
-
+@import '@material/react-button/index.scss';
 @import '@material/react-drawer/index.scss';
 @import '@material/react-top-app-bar/index.scss';
 @import '@material/react-material-icon/index.scss';
@@ -38,7 +38,7 @@
 }
 
 .commentSection {
-  background-color: $comments;
+  margin-top: 20%;
 }
 .link {
     text-decoration: none;
@@ -46,6 +46,12 @@
 .icon {
   transform: scale(1.45);
 
+}
+.type {
+  margin: 140px;
+}
+.color {
+  color: $orange;
 }
 .ProfileName {
   margin-left: 2%;
@@ -147,11 +153,16 @@
 }
 .ColorT {
   color: #CC8400;
+  margin-left: 10%;
 }
 .iconOpen {
   color: $orange;
   margin-left: 30px;
   }
+
+.welcomeText {
+  margin-left: 10%;
+}
 
 .deleteIcon {
   margin-left: 3%;

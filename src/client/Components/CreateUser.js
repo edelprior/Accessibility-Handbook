@@ -4,8 +4,6 @@ import axios from 'axios';
 import TextField, {HelperText, Input} from '@material/react-text-field';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 import Button from '@material/react-button';
-import EditUser from './EditUser';
-
 
 class CreateUser extends Component {
   constructor(props) {

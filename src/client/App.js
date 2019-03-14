@@ -14,7 +14,6 @@ import { Headline3 } from '@material/react-typography';
 import Start from './Pages/Start';
 import Reference from './Pages/Reference';
 import Examples from './Pages/Examples';
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 // eslint-disable-next-line
@@ -96,6 +95,10 @@ class App extends Component {
                     <ListItemText className="NavText" primaryText="GitHub" />
                   </Link>
                 </ListItem>
+
+                {/* * * * */}
+
+
               </List>
             </DrawerContent>
           </Drawer>

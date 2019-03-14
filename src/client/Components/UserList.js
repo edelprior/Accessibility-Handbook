@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import User from './User';
 import axios from 'axios';
-
+import Button from '@material/react-button';
+import '../App.scss';
 class UserList extends Component {
   constructor(props) {
     super(props);
@@ -60,8 +61,15 @@ class UserList extends Component {
     ));
 
     return (
+      <div className = "commentTitle">
+        <Link to={'/create-user'}>
+          <Button>
+      Add a Comment
+          </Button>
+        </Link>
+        <div>{userList}</div>
+      </div>
 
-      <div>{userList}</div>
     );
   }
 }
